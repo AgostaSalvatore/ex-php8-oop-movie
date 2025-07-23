@@ -9,6 +9,10 @@ $romantic = new Genre('Romantic');
 $vForVendetta = new Movie('V For Vendetta', 2005, true, [$action]);
 $titanic      = new Movie('Titanic', 1997, false, [$romantic, $action]);
 
+// Impostare streamable
+$vForVendetta->setStreamable(true);  // V for Vendetta disponibile per streaming
+$titanic->setStreamable(false);  // Titanic non disponibile per streaming
+
 var_dump($vForVendetta);
 
 var_dump($titanic);

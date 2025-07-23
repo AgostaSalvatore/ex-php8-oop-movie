@@ -1,4 +1,7 @@
 <?php
+
+require_once './Traits/Streamable.php';
+
 class Movie
 {
     // istanze
@@ -6,6 +9,8 @@ class Movie
     protected $releaseDate;
     protected $adultFilm;
     protected $genres;  // Cambiato da $genre a $genres (array)
+
+    use Streamable;
 
     // costruttore
     function __construct($_title, $_releaseDate, $_adultFilm, array $_genres)
