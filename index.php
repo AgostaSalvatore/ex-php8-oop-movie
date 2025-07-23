@@ -14,6 +14,13 @@ class Movie
     }
 }
 
+$vForVendetta = new Movie('V For Vendetta', 2005, 'Action');
+$titanic      = new Movie('Titanic', 1997, 'Romantic');
+
+var_dump($vForVendetta);
+
+var_dump($titanic);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +29,12 @@ class Movie
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            background-color: black !important;
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
     
